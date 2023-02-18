@@ -1,0 +1,59 @@
+class BankCard {
+    protected int cardId; //declaring instance variable 
+    protected String clientName;
+    protected String issuerBank;
+    protected String bankAccount;
+    protected double balanceAmount;
+
+    // constructor
+    public BankCard(double balanceAmount, int cardId, String bankAccount, String issuerBank) {
+        this.balanceAmount = balanceAmount; //initializing the variables by assigning the value of constructor's parameter
+        this.cardId = cardId;
+        this.bankAccount = bankAccount;
+        this.issuerBank = issuerBank;
+        this.clientName = ""; //assigning the value of clientName as empty string
+    }
+
+    // accessor methods
+    public double getBalanceAmount() {
+        return balanceAmount; //returning balanceAmount to the user
+    }
+
+    public int getCardId() {
+        return cardId; //returning cardId to the user 
+    }
+    
+     public String getBankAccount() {
+        return bankAccount; //returning bankAccount to the user
+    }
+    
+    public String getIssuerBank() {
+        return issuerBank; //returning issuerBank to the user
+    }
+
+    public String getClientName() {
+        return clientName; //returning clientName to the user
+    }
+
+    // new methods to set client name and balance amount
+    public void setClientName(String newName) {
+        this.clientName = newName;
+    }
+
+    public void setBalanceAmount(double newBalanceAmount) {
+        this.balanceAmount = newBalanceAmount;
+    }
+
+    // display method
+    public void display() {
+        if (clientName == "") {
+            System.out.println("Client name is not assigned"); //displaying information if client name is empty
+        } else {
+            System.out.println("Card ID: " + cardId); //displaying cardId, clientName, issuerBank, bankAccount and balanceAmount
+            System.out.println("Client name: " + clientName);
+            System.out.println("Issuer bank: " + issuerBank);
+            System.out.println("Bank account: " + bankAccount);
+            System.out.println("Balance amount: " + balanceAmount);
+        }
+    }
+}
