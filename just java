@@ -5,7 +5,7 @@ class BankCard {
     protected String bankAccount;
     protected double balanceAmount;
 
-    // constructor
+    // 
     public BankCard(double balanceAmount, int cardId, String bankAccount, String issuerBank) {
         this.balanceAmount = balanceAmount; //initializing the variables by assigning the value of constructor's parameter
         this.cardId = cardId;
