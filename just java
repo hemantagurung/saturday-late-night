@@ -1,4 +1,4 @@
-class BankCard 
+class BankCard {
     protected int cardId; //declaring instance variable 
     protected String clientName;
     protected String issuerBank;
