@@ -14,7 +14,7 @@ fhkjhfsj
         this.clientName = ""; //assigning the value of clientName as empty string
     }
 
-    // accessor methods
+
     public double getBalanceAmount() {
         return balanceAmount; //returning balanceAmount to the user
     }
