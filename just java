@@ -44,7 +44,6 @@ fhkjhfsj
         this.balanceAmount = newBalanceAmount;
     }
 
-    // display method
     public void display() {
         if (clientName == "") {
             System.out.println("Client name is not assigned"); //displaying information if client name is empty
